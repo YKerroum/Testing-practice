@@ -1,8 +1,8 @@
 const calculator=require('./calculator');
-describe('calculator add method', ()=>{
+describe('new calculator add method', ()=>{
   test('adds 1 + 2  to equal 3', ()=>{
     //Arrange
-    const calculate= calculator(1,2);
+    const calculate= new calculator(1,2);
 
     //Act
     const result = calculate.add(1, 2);
@@ -13,7 +13,7 @@ describe('calculator add method', ()=>{
 
   test('adds 1.5 + 2.5  to equal 4', ()=>{
     //Arrange
-    const calculate= calculator(1.5,2.5);
+    const calculate= new calculator(1.5,2.5);
 
     //Act
     const result = calculate.add();
@@ -24,7 +24,7 @@ describe('calculator add method', ()=>{
 
   test('adds -1 + 2  to equal 1', ()=>{
     //Arrange
-    const calculate= calculator(-1,2);
+    const calculate= new calculator(-1,2);
 
     //Act
     const result = calculate.add();
@@ -36,10 +36,10 @@ describe('calculator add method', ()=>{
 });
 
 
-describe('calculator substract method', ()=>{
+describe('new calculator substract method', ()=>{
   test('substracts 2 - 1  to equal 1', ()=>{
     //Arrange
-    const calculate= calculator(2,1);
+    const calculate= new calculator(2,1);
 
     //Act
     const result = calculate.substract();
@@ -50,7 +50,7 @@ describe('calculator substract method', ()=>{
 
   test('substracts 1 - 2  to equal -1', ()=>{
     //Arrange
-    const calculate= calculator(1,2);
+    const calculate= new calculator(1,2);
 
     //Act
     const result = calculate.substract();
@@ -61,7 +61,7 @@ describe('calculator substract method', ()=>{
 
   test('substracts 2.5 - 1  to equal 1.5', ()=>{
     //Arrange
-    const calculate= calculator(2.5,1);
+    const calculate= new calculator(2.5,1);
 
     //Act
     const result = calculate.substract();
@@ -72,10 +72,10 @@ describe('calculator substract method', ()=>{
 
 });
 
-describe('calculator divide method', ()=>{
+describe('new calculator divide method', ()=>{
   test('divids 1 / 2  to equal 0.5', ()=>{
     //Arrange
-    const calculate= calculator(1,2);
+    const calculate= new calculator(1,2);
 
     //Act
     const result = calculate.divide();
@@ -86,7 +86,7 @@ describe('calculator divide method', ()=>{
 
   test('divids 0 / 1  to equal 0', ()=>{
     //Arrange
-    const calculate= calculator(0);
+    const calculate= new calculator(0);
 
     //Act
     const result = calculate.divide();
@@ -97,7 +97,7 @@ describe('calculator divide method', ()=>{
 
   test('divids -1 / -4  to equal 0.25', ()=>{
     //Arrange
-    const calculate= calculator(-1,-4);
+    const calculate= new calculator(-1,-4);
 
     //Act
     const result = calculate.divide();
@@ -108,10 +108,10 @@ describe('calculator divide method', ()=>{
 
 });
 
-describe('calculator multiply method', ()=>{
+describe('new calculator multiply method', ()=>{
   test('multiplies 0 * 2  to equal 0', ()=>{
     //Arrange
-    const calculate= calculator(0,2);
+    const calculate= new calculator(0,2);
 
     //Act
     const result = calculate.multiply();
@@ -123,7 +123,7 @@ describe('calculator multiply method', ()=>{
 
   test('multiplies -1 * 2  to equal -2', ()=>{
     //Arrange
-    const calculate= calculator(-1,2);
+    const calculate= new calculator(-1,2);
 
     //Act
     const result = calculate.multiply();
@@ -134,7 +134,7 @@ describe('calculator multiply method', ()=>{
 
   test('multiplies -4 * -2  to equal 8', ()=>{
     //Arrange
-    const calculate= calculator(-4,-2);
+    const calculate= new calculator(-4,-2);
 
     //Act
     const result = calculate.multiply();

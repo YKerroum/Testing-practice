@@ -3,10 +3,10 @@ class calculator{
     this.a=a;
     this.b=b;
     }
-    add=()=>a+b;
-    subtract=()=>a-b;
-    divide=()=>a/b;
-    multiply=()=>a*b;
+    add=()=>this.a+this.b;
+    substract=()=>this.a-this.b;
+    divide=()=>this.a/this.b;
+    multiply=()=>this.a*this.b;
 
 }
 module.exports = calculator;
